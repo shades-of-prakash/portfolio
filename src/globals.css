@@ -1,0 +1,35 @@
+@import "./font.css";
+@import "tailwindcss";
+/* * {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+} */
+#root,
+body {
+	overflow: hidden;
+}
+/* #main {
+	overscroll-behavior: none;
+} */
+:root {
+	--creato: "creato-display", sans-serif;
+	--array: "array", sans-serif;
+}
+@theme {
+	--color-primary: rgb(0, 0, 0);
+	--color-secondary: rgb(255, 255, 255);
+	--color-accent: rgb(31, 75, 44);
+	--color-accent-complete: rgb(9, 153, 51);
+
+	--color-gradinet-start: rgb(31, 75, 44);
+	--color-gradient-end: rgb(73, 177, 104);
+
+	--font-creato: var(--creato);
+	--font-array: var(--array);
+	--test: #1f4b2c;
+}

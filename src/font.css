@@ -1,0 +1,68 @@
+@font-face {
+	font-family: "creato-display";
+	font-style: light;
+	font-weight: 300;
+	font-display: swap;
+	src: url("./assets/fonts/creatodisplay/CreatoDisplay-Light.woff2")
+			format("woff2"),
+		url("./assets/fonts/creatodisplay/CreatoDisplay-Light.woff") format("woff"),
+		url("./assets/fonts/creatodisplay/CreatoDisplay-Light.otf")
+			format("opentype");
+}
+
+@font-face {
+	font-family: "creato-display";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./assets/fonts/creatodisplay/CreatoDisplay-Regular.woff2")
+			format("woff2"),
+		url("./assets/fonts/creatodisplay/CreatoDisplay-Regular.woff")
+			format("woff"),
+		url("./assets/fonts/creatodisplay/CreatoDisplay-Regular.otf")
+			format("opentype");
+}
+@font-face {
+	font-family: "creato-display";
+	font-style: medium;
+	font-weight: 500;
+	font-display: swap;
+	src: url("./assets/fonts/creatodisplay/CreatoDisplay-Medium.woff2")
+			format("woff2"),
+		url("./assets/fonts/creatodisplay/CreatoDisplay-Medium.woff") format("woff"),
+		url("./assets/fonts/creatodisplay/CreatoDisplay-Medium.otf")
+			format("opentype");
+}
+@font-face {
+	font-family: "creato-display";
+	font-style: bold;
+	font-weight: 700;
+	font-display: swap;
+	src: url("./assets/fonts/creatodisplay/CreatoDisplay-Bold.woff2")
+			format("woff2"),
+		url("./assets/fonts/creatodisplay/CreatoDisplay-Bold.woff") format("woff"),
+		url("./assets/fonts/creatodisplay/CreatoDisplay-Bold.otf")
+			format("opentype");
+}
+
+@font-face {
+	font-family: "creato-display";
+	font-style: black;
+	font-weight: 900;
+	font-display: swap;
+	src: url("./assets/fonts/creatodisplay/CreatoDisplay-Black.woff2")
+			format("woff2"),
+		url("./assets/fonts/creatodisplay/CreatoDisplay-Black.woff") format("woff"),
+		url("./assets/fonts/creatodisplay/CreatoDisplay-Black.otf")
+			format("opentype");
+}
+
+@font-face {
+	font-family: "array";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./assets/fonts/array/Array-Regular.woff2") format("woff2"),
+		url("./assets/fonts/array/Array-Regular.woff") format("woff"),
+		url("./assets/fonts/array/Array-Regular.otf") format("ttf");
+}
