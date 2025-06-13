@@ -1,6 +1,6 @@
 @import "./font.css";
 @import "tailwindcss";
-/* * {
+* {
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	box-sizing: border-box;
@@ -8,28 +8,86 @@
 
 *::-webkit-scrollbar {
 	display: none;
-} */
-#root,
-body {
-	overflow: hidden;
 }
-/* #main {
-	overscroll-behavior: none;
-} */
+
 :root {
 	--creato: "creato-display", sans-serif;
 	--array: "array", sans-serif;
 }
+@layer base {
+	#root {
+		height: 100dvh;
+	}
+	html {
+		scroll-behavior: smooth;
+		background-color: black;
+	}
+
+	.card {
+		/* background: linear-gradient(
+			90deg,
+			rgba(31, 75, 44, 0.316) 0%,
+			rgba(73, 177, 104, 0.079) 100%
+		); */
+		background-color: color-mix(
+			in oklab,
+			var(--color-green-600) 10%,
+			transparent
+		);
+
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(4.2px);
+		border-radius: 10px;
+	}
+	.conta {
+		--color: rgba(40, 40, 40, 0.644);
+		background-color: black;
+		background-image: linear-gradient(
+				0deg,
+				transparent 24%,
+				var(--color) 25%,
+				var(--color) 26%,
+				transparent 27%,
+				transparent 74%,
+				var(--color) 75%,
+				var(--color) 76%,
+				transparent 77%,
+				transparent
+			),
+			linear-gradient(
+				90deg,
+				transparent 24%,
+				var(--color) 25%,
+				var(--color) 26%,
+				transparent 27%,
+				transparent 74%,
+				var(--color) 75%,
+				var(--color) 76%,
+				transparent 77%,
+				transparent
+			);
+		background-size: 100px 100px;
+	}
+	/* .glass {
+		background: rgba(2, 2, 2, 0.25);
+		backdrop-filter: blur(5.5px);
+		-webkit-backdrop-filter: blur(5.5px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+	} */
+}
+
 @theme {
 	--color-primary: rgb(0, 0, 0);
 	--color-secondary: rgb(255, 255, 255);
 	--color-accent: rgb(31, 75, 44);
 	--color-accent-complete: rgb(9, 153, 51);
 
-	--color-gradinet-start: rgb(31, 75, 44);
-	--color-gradient-end: rgb(73, 177, 104);
+	--color-gradinet-start: rgba(31, 75, 44, 0.316);
+	--color-gradient-end: rgba(73, 177, 104, 0.079);
 
 	--font-creato: var(--creato);
 	--font-array: var(--array);
 	--test: #1f4b2c;
+	--color-muted-foreground: oklch(0.708 0 0);
 }
