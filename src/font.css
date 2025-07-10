@@ -62,7 +62,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url("./assets/fonts/array/Array-Regular.woff2") format("woff2"),
-		url("./assets/fonts/array/Array-Regular.woff") format("woff"),
-		url("./assets/fonts/array/Array-Regular.otf") format("ttf");
+	src: url("./assets/fonts/Array/Array-Regular.woff2") format("woff2"),
+		url("./assets/fonts/Array/Array-Regular.woff") format("woff"),
+		url("./assets/fonts/Array/Array-Regular.ttf") format("ttf");
 }
