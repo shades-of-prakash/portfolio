@@ -46,7 +46,7 @@ const projectsInfo = [
 			},
 		],
 		projectGithubLink: "https://github.com/shades-of-prakash/shades",
-		projectLiveLink: "shades-opal.vercel.app/",
+		projectLiveLink: "http://shades-opal.vercel.app/",
 		projectImages: [
 			"/projects/shades-1.png",
 			"/projects/shades-2.png",
