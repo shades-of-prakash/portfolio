@@ -76,6 +76,21 @@
 		border: 1px solid rgba(255, 255, 255, 0.18);
 	} */
 }
+:root{
+	--blog-background:var(--color-white);
+	--blog-foreground:var(--color-black);
+	--blog-accent:var(--color-green-600);
+	--blog-nav-background:var(--color-neutral-100);
+	--blog-nav-foreground:var(--color-black);
+}
+:root.dark{
+	--blog-background:var(--color-black);
+	--blog-foreground:var(--color-white);
+	--blog-accent:var(--color-green-600);
+	--blog-nav-background:var(--color-neutral-100);
+	--blog-nav-foreground:var(--color-black);
+}
+
 
 @theme {
 	--color-primary: rgb(0, 0, 0);
@@ -90,4 +105,12 @@
 	--font-array: var(--array);
 	--test: #1f4b2c;
 	--color-muted-foreground: oklch(0.708 0 0);
+
+	/* Theme for only blog */
+	--color-b-background:var(--blog-background);
+	--color-b-foreground:var(--blog-foreground);
+	--color-b-accent:var(--blog-accent);
+	--color-b-nav-background:var(--blog-nav-background);
+	--color-b-nav-foreground:var(--blog-nav-foreground);
 }
+
