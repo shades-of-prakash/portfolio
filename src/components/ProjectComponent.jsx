@@ -65,13 +65,6 @@ const ProjectComponent = () => {
 										</div>
 									</div>
 								</div>
-								<div className="rounded-xl overflow-hidden  border border-green-600/50 absolute top-0 left-1/2 z-10 w-[300px] h-[160px] transform translate-y-10 opacity-0 hidden group-hover:block group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-									<img
-										src={project.projectImages[0]}
-										alt="project-preview-image"
-										className="w-full h-full object-cover"
-									/>
-								</div>
 							</div>
 						</React.Fragment>
 					);

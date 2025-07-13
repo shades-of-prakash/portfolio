@@ -13,7 +13,7 @@ const MainLayout = () => {
 			<HeroComponent />
 			<DADComponent />
 			<ProjectComponent />
-			<div className="flex flex-col bg-violet-500">
+			<div className="flex flex-col">
 				<h1 className="text-white">My skills</h1>
 				<HeadingComponent heading={"What I Bring to the Battle"} />
 			</div>
