@@ -20,7 +20,7 @@ const ProjectComponent = () => {
 			<div className=" mt-10 ">
 				<HeadingComponent heading="PROJECTS" />
 			</div>
-			<div className="w-full h-full flex flex-col p-5 md:p-10 md:gap-2 gap-1">
+			<div className="w-full h-full flex flex-col p-5 md:p-10 md:gap-5 gap-1">
 				{projectsInfo.map((project, index) => {
 					return (
 						<React.Fragment key={index + 1}>

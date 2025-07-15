@@ -38,7 +38,7 @@ const SingleProjectComponent = ({ project, setter }) => {
 		<div className="bg-black/80  absolute top-0 left-0 h-screen w-full flex justify-center items-center p-3">
 			<div className="border-1 border-green-600/50 rounded-xl test md:h-[660px] h-full md:w-[1200px] w-screen overflow-scroll flex items-center flex-col">
 				<div className="w-full h-auto md:h-15 bg-black  p-4 border-b border-green-600/50 flex items-center justify-between  text-white gap-2">
-					<div className="w-full  md:w-1/2 rounded-full flex items-center md:gap-4 gap-2">
+					<div className="w-full  md:w-1/2 rounded-full flex items-center md:gap-4 gap-2 ">
 						<div
 							onClick={() => setter(null)}
 							className="w-9 h-9 rounded-full flex items-center justify-center text-xl md:text-3xl text-green-600"
