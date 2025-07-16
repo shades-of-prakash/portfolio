@@ -28,7 +28,8 @@ const ProfileComponent = () => {
 						<div
 							ref={(el) => (linesRef.current[i] = el)}
 							key={i}
-							className="w-[1px] h-full bg-gradient-to-b from-accent to-accent/10 md:from-accent md:via-accent  md:to-black"
+							
+							className="w-[1px] h-full bg-gradient-to-b from-accent  md:from-accent md:via-accent  md:to-black"
 						/>
 					))}
 				</div>

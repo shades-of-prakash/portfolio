@@ -93,6 +93,8 @@
 
 
 @theme {
+	--color-accent:#00a63e;
+	--color-stroke-gradient:;
 	--color-primary: rgb(0, 0, 0);
 	--color-secondary: rgb(255, 255, 255);
 	--color-accent: rgb(31, 75, 44);
