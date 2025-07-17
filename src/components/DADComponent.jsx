@@ -36,7 +36,7 @@ const FullText = () => {
 	});
 
 	return (
-		<div className="new-main w-screen h-auto bg-accent grid place-items-center">
+		<div className={`new-main w-screen h-auto bg-accent-light grid place-items-center`}>
 			<h1 className="new will-change-transform font-creato font-black text-9xl md:text-[220px] whitespace-nowrap inline-block">
 				DESIGNER AND DEVELOPER
 			</h1>
