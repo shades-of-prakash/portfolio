@@ -82,11 +82,14 @@
 	--blog-accent:var(--color-green-600);
 	--blog-nav-background:var(--color-neutral-100);
 	--blog-nav-foreground:var(--color-black);
+	color:rgb(11, 207, 83);
 }
 
 
 @theme {
-	--color-accent:#00a63e;
+	/* --color-accent:#00a63e; */
+	/* --color-accent:rgb(0, 255, 94); */
+	--color-accent-light:#00A63E;
 	--color-stroke-gradient:;
 	--color-primary: rgb(0, 0, 0);
 	--color-secondary: rgb(255, 255, 255);

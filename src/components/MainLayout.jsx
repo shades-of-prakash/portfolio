@@ -28,7 +28,8 @@ const MainLayout = () => {
 	return (
 		<div className="bg-primary w-full h-screen overflow-y-scroll overflow-x-hidden" id="main">
 			<HeroComponent />
-			<DADComponent />
+			<DADComponent  />
+
 			<ProjectComponent />
 			<SkillsComponent />
 			<div className="w-screen overflow-hidden py-8 bg-green-600" >
