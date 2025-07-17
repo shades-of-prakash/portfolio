@@ -39,35 +39,7 @@
 		backdrop-filter: blur(4.2px);
 		border-radius: 10px;
 	}
-	.conta {
-		--color: rgba(40, 40, 40, 0.644);
-		background-color: black;
-		background-image: linear-gradient(
-				0deg,
-				transparent 24%,
-				var(--color) 25%,
-				var(--color) 26%,
-				transparent 27%,
-				transparent 74%,
-				var(--color) 75%,
-				var(--color) 76%,
-				transparent 77%,
-				transparent
-			),
-			linear-gradient(
-				90deg,
-				transparent 24%,
-				var(--color) 25%,
-				var(--color) 26%,
-				transparent 27%,
-				transparent 74%,
-				var(--color) 75%,
-				var(--color) 76%,
-				transparent 77%,
-				transparent
-			);
-		background-size: 100px 100px;
-	}
+
 	/* .glass {
 		background: rgba(2, 2, 2, 0.25);
 		backdrop-filter: blur(5.5px);
@@ -75,6 +47,27 @@
 		border-radius: 10px;
 		border: 1px solid rgba(255, 255, 255, 0.18);
 	} */
+
+
+	.marquee-container {
+		display: flex;
+		white-space: nowrap;
+		gap: 1.25rem; /* gap-5 */
+		font-weight: 600; /* font-semibold */
+		font-size: 1.25rem; /* text-xl */
+		color: black;
+		animation: scroll-left 30s linear infinite;
+	  }
+	  
+	  @keyframes scroll-left {
+		0% {
+		  transform: translateX(0%);
+		}
+		100% {
+		  transform: translateX(-50%);
+		}
+	  }
+	  
 }
 :root{
 	--blog-background:var(--color-white);
