@@ -31,7 +31,7 @@ const skills = [
 
 function SkillsComponent() {
 	return (
-		<div className="w-screen h-auto px-4 py-10">
+		<div className="w-screen h-auto px-4 py-10 mb-12">
 			<div className="flex flex-col items-center">
 				<HeadingComponent heading={"EXPERTISE"} />
 			</div>

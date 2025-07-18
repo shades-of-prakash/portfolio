@@ -34,7 +34,7 @@ const ProfileComponent = () => {
 					))}
 				</div>
 			</div>
-			<div className="absolute w-50 h-50 md:w-90 md:h-90 bg-red-900 rounded-md overflow-hidden ">
+			<div className="absolute w-50 h-50 md:w-90 md:h-90 bg-accent-light rounded-md overflow-hidden ">
 				<img src={profile} alt="" />
 			</div>
 		</div>
