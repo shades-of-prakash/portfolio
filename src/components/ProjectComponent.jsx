@@ -15,8 +15,20 @@ const ProjectComponent = () => {
 		setActiveIndex(index);
 	}
 
+	useEffect(() => {
+		if (activeIndex !== null) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "";
+		}
+
+		return () => {
+			document.body.style.overflow = "";
+		};
+	}, [activeIndex]);
+
 	return (
-		<div className="w-full h-auto">
+		<div className="relative w-full h-auto">
 			<div className=" mt-10 ">
 				<HeadingComponent heading="PROJECTS" />
 			</div>
@@ -26,7 +38,7 @@ const ProjectComponent = () => {
 						<React.Fragment key={index + 1}>
 							<div
 								onClick={() => toggleIndex(index)}
-								className={`group relative w-full md:h-24 h-auto mb-2  rounded-md cursor-pointer border border-zinc-800/70`}
+								className={`group relative w-full md:h-24 h-auto mb-2  rounded-md cursor-pointer border border-zinc-800`}
 							>
 								<div className="text-white w-full h-full flex gap-2 items-center md:justify-between  p-3 md:p-2">
 									<div className="  w-full md:w-1/2 h-full flex items-center md:gap-15 gap-2 ">

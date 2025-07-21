@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -6,42 +6,59 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
 
 const FullText = () => {
-	useGSAP(() => {
-		const mm = gsap.matchMedia();
+  const containerRef = useRef(null);
+  const textRef = useRef(null);
 
-		mm.add(
-			{
-				isLarge: "(min-width: 1024px)",
-				isMedium: "(min-width: 768px) and (max-width: 1023px)",
-				isSmall: "(max-width: 767px)",
-			},
-			(context) => {
-				const { isLarge, isMedium, isSmall } = context.conditions;
+  useGSAP(() => {
+    const mm = gsap.matchMedia();
 
-				gsap.to(".new", {
-					xPercent: isLarge ? -57 : isMedium ? -76 : -81,
-					scrollTrigger: {
-						trigger: ".new-main",
-						scroller: "#main",
-						scrub: 1.5,
-						start: "top 60%",
-						end: "top 0%",
-						// markers: true,
-					},
-				});
-			}
-		);
+    mm.add(
+      {
+        isLarge: "(min-width: 1024px)",
+        isMedium: "(min-width: 768px) and (max-width: 1023px)",
+        isSmall: "(max-width: 767px)",
+      },
+      (context) => {
+        const { isLarge, isMedium, isSmall } = context.conditions;
+        const container = containerRef.current;
+        const text = textRef.current;
 
-		return () => mm.revert();
-	});
+        const scrollDistance = text.scrollWidth - container.offsetWidth;
 
-	return (
-		<div className={`new-main w-screen h-auto bg-accent-light grid place-items-center`}>
-			<h1 className="new will-change-transform font-creato font-black text-9xl md:text-[220px] whitespace-nowrap inline-block">
-				DESIGNER AND DEVELOPER
-			</h1>
-		</div>
-	);
+        let scrubSpeed = 1.5;
+        if (isSmall) scrubSpeed = 2;
+        if (isMedium) scrubSpeed = 1.75;
+
+        gsap.to(text, {
+          x: -scrollDistance,
+          ease: "none",
+          scrollTrigger: {
+            trigger: container,
+            scrub: scrubSpeed,
+            start: "top 60%",
+            end: "top 0%",
+            // markers: true,
+          },
+        });
+      }
+    );
+
+    return () => mm.revert();
+  }, []);
+
+  return (
+    <div
+      ref={containerRef}
+      className="w-screen h-auto bg-accent-light overflow-hidden grid place-items-center"
+    >
+      <h1
+        ref={textRef}
+        className="will-change-transform font-creato font-black text-9xl md:text-[220px] whitespace-nowrap inline-block"
+      >
+        DESIGNER AND DEVELOPER
+      </h1>
+    </div>
+  );
 };
 
 export default FullText;

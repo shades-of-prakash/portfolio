@@ -10,7 +10,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowRight02Icon } from "@hugeicons/core-free-icons";
 import Marquee from "./Marquee";
 import Knowme from "./Knowme"
-gsap.registerPlugin(useGSAP);
+import Tools from "./Tools"
 
 const MainLayout = () => {
 	return (
@@ -21,6 +21,7 @@ const MainLayout = () => {
 			<SkillsComponent />
 			<Marquee/>
 			<Knowme/>
+			<Tools/>
 			<div className="w-screen h-dvh bg-blue-400" id="about"></div>
 		</div>
 	);

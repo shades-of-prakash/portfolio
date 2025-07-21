@@ -36,7 +36,7 @@ function SkillsComponent() {
 				<HeadingComponent heading={"EXPERTISE"} />
 			</div>
 
-			<div className="w-full flex flex-wrap justify-center gap-4 mt-10 md:px-40 px-4 group">
+			<div className="w-full flex flex-wrap justify-center gap-4 mt-10 px-10 md:px-40 pt-5 group">
 				{skills.map((skill, index) => (
 					<div
 						key={index}
