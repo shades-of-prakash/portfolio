@@ -1,5 +1,3 @@
 export default function Tools(){
-    return <div className="w-screen bg-red-900 h-dvh">
-        <div className=""></div>
-    </div>
+    return <div className="w-full h-20 bg-green-900">Tools</div>
 }

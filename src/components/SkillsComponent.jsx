@@ -10,7 +10,6 @@ import {
 const skills = [
 	{ icon: <SiReact size="1em" color="#61DAFB" />, label: "React" },
 	{ icon: <SiNodedotjs size="1em" color="#5FA04E" />, label: "Node.js" },
-	{ icon: <SiTailwindcss size="1em" color="#06B6D4" />, label: "Tailwind CSS" },
 	{ icon: <SiExpress size="1em" color="#ffffff" />, label: "Express" },
 	{ icon: <SiDocker size="1em" color="#2496ED" />, label: "Docker" },
 	{ icon: <SiMongodb size="1em" color="#47A248" />, label: "MongoDB" },
@@ -26,6 +25,7 @@ const skills = [
 	{ icon: <SiNextdotjs size="1em" color="#FFFFFF" />, label: "Nextjs" },
 	{ icon: <SiPython size="1em" color="#3776AB" />, label: "Python" },
 	{ icon: <SiLangchain size="1em" color="#1C3C3C" />, label: "Langchain" },
+	{ icon: <SiTailwindcss size="1em" color="#06B6D4" />, label: "Tailwind CSS" },
 	
 ];
 
