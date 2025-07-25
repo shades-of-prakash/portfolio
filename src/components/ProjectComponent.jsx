@@ -15,17 +15,15 @@ const ProjectComponent = () => {
 		setActiveIndex(index);
 	}
 
-	useEffect(() => {
-		if (activeIndex !== null) {
-			document.body.style.overflow = "hidden";
-		} else {
-			document.body.style.overflow = "";
-		}
+	// useEffect(() => {
+	// 	// Disable background scroll
+	// 	document.body.style.overflow = "hidden";
 
-		return () => {
-			document.body.style.overflow = "";
-		};
-	}, [activeIndex]);
+	// 	return () => {
+	// 		// Re-enable when component unmounts
+	// 		document.body.style.overflow = "";
+	// 	};
+	// }, []);
 
 	return (
 		<div className="relative w-full h-auto">

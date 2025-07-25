@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
 	ArrowLeft02Icon,
@@ -37,6 +37,16 @@ const SingleProjectComponent = ({ project, setter }) => {
 		});
 	}, []);
 
+	useEffect(() => {
+		// Disable background scroll
+		document.body.style.overflow = "hidden";
+
+		return () => {
+			// Re-enable when component unmounts
+			document.body.style.overflow = "";
+		};
+	}, []);
+
 	// Function to handle clicks on the background
 	const handleBackgroundClick = (e) => {
 		// Check if the click occurred directly on the background div
@@ -51,7 +61,7 @@ const SingleProjectComponent = ({ project, setter }) => {
 
 	return (
 		<div
-			className="bg-black/80 absolute top-0 left-0 h-screen w-full flex justify-center items-center p-3"
+			className="bg-black/80 fixed top-0 left-0 h-screen w-full flex justify-center items-center p-3"
 			onClick={handleBackgroundClick} // Add the background click handler here
 		>
 			<div
