@@ -32,16 +32,16 @@ const NavComponent = () => {
 				<p className="text-secondary tracking-wide hidden md:block">
 					shadesofprakash
 				</p>
-				<ul className="rounded-full overflow-hidden w-full md:w-auto flex items-center md:gap-10 gap-1 text-secondary">
+				<ul className="rounded-full md:rounded-md overflow-hidden w-full md:w-auto flex items-center md:gap-10 gap-1 text-secondary">
 					{navItems.map(({ label, icon, sectionId, route }) => (
 						<li
-							className="overflow-hidden flex-1 flex justify-center items-center rounded-full md:rounded-md"
+							className="overflow-hidden flex-1 flex justify-center items-center rounded-full md:rounded-none"
 							key={label}
 						>
 							{route ? (
 								<Link
 									to={route}
-									className={`w-full flex justify-center items-center gap-2 px-3 py-2 transition-colors duration-200  hover:bg-green-600`}
+									className={`w-full flex justify-center items-center gap-2 px-3 py-2 transition-colors duration-200 hover:text-white text-white/60  `}
 								>
 									<span className="hidden md:inline">{label}</span>
 									<HugeiconsIcon icon={icon} className="md:hidden" />
@@ -49,12 +49,12 @@ const NavComponent = () => {
 							) : (
 								<button
 									onClick={() => handleClick(sectionId)}
-									className={`w-full flex justify-center items-center gap-2 px-3 py-2  
-										${
-											activeSection === sectionId
-												? "bg-green-600 text-black"
-												: "hover:bg-green-600"
-										}`}
+									className={`w-full flex justify-center items-center md:bg-none hover:text-white gap-2 px-3 py-2
+		${
+			activeSection === sectionId
+				? "text-black bg-green-600 md:bg-transparent md:text-white"
+				: "text-white/60"
+		}`}
 								>
 									<span className="hidden md:inline">{label}</span>
 									<HugeiconsIcon icon={icon} className="md:hidden" />
