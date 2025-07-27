@@ -1,10 +1,10 @@
-import Brave from "../assets/tools/brave.svg?react";
-import Figma from "../assets/tools/figma.svg?react";
-import Postman from "../assets/tools/postman.svg?react";
-import Vscode from "../assets/tools/vscode.svg?react";
-import IntellijIdea from "../assets/tools/intelliJidea.svg?react";
-import WebStorm from "../assets/tools/webStorm.svg?react";
-import Spotify from "../assets/tools/spotify.svg?react";
+import Brave from "../assets/tools/brave.svg";
+import Figma from "../assets/tools/figma.svg";
+import Postman from "../assets/tools/postman.svg";
+import Vscode from "../assets/tools/vscode.svg";
+import Intellijidea from "../assets/tools/intelliJidea.svg";
+import WebStorm from "../assets/tools/webStorm.svg";
+import Spotify from "../assets/tools/spotify.svg";
 
 export default function Tools() {
 	const toolData = [
@@ -13,7 +13,7 @@ export default function Tools() {
 			type: "IDE",
 			usage: "Frontend & Backend Dev",
 			proficiency: "Advanced",
-			icon: <Vscode className="w-6 h-6" />,
+			icon: Vscode,
 			link: "https://code.visualstudio.com/",
 		},
 		{
@@ -21,7 +21,7 @@ export default function Tools() {
 			type: "IDE",
 			usage: "Java/Backend Dev",
 			proficiency: "Intermediate",
-			icon: <IntellijIdea className="w-6 h-6" />,
+			icon: Intellijidea,
 			link: "https://www.jetbrains.com/idea/",
 		},
 		{
@@ -29,7 +29,7 @@ export default function Tools() {
 			type: "IDE",
 			usage: "JavaScript/React Dev",
 			proficiency: "Intermediate",
-			icon: <WebStorm className="w-6 h-6" />,
+			icon: WebStorm,
 			link: "https://www.jetbrains.com/webstorm/",
 		},
 		{
@@ -37,7 +37,7 @@ export default function Tools() {
 			type: "API Testing Tool",
 			usage: "Testing REST APIs",
 			proficiency: "Intermediate",
-			icon: <Postman className="w-6 h-6" />,
+			icon: Postman,
 			link: "https://www.postman.com/",
 		},
 		{
@@ -45,7 +45,7 @@ export default function Tools() {
 			type: "Design Tool",
 			usage: "UI/UX Design, Prototyping",
 			proficiency: "Intermediate",
-			icon: <Figma className="w-6 h-6" />,
+			icon: Figma,
 			link: "https://www.figma.com/",
 		},
 		{
@@ -53,7 +53,7 @@ export default function Tools() {
 			type: "Browser/Dev Tool",
 			usage: "Privacy-focused browsing & dev testing",
 			proficiency: "Advanced",
-			icon: <Brave className="w-6 h-6" />,
+			icon: Brave,
 			link: "https://brave.com/",
 		},
 		{
@@ -61,7 +61,7 @@ export default function Tools() {
 			type: "Productivity Tool",
 			usage: "Background music during coding",
 			proficiency: "Daily User",
-			icon: <Spotify className="w-6 h-6" />,
+			icon: Spotify,
 			link: "https://www.spotify.com/",
 		},
 	];
@@ -91,7 +91,7 @@ export default function Tools() {
 
 						{/* Row Content */}
 						<div className="w-full md:w-1/4 z-10 flex items-center gap-3 group-hover:text-black transition-colors duration-200">
-							{icon}
+							<img src={icon} alt={name} className="w-6 h-6" />
 							<span className="truncate overflow-hidden whitespace-nowrap">
 								{name}
 							</span>

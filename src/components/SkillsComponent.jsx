@@ -1,10 +1,24 @@
-
 import HeadingComponent from "./HeadingComponent";
 import {
-	SiReact, SiTailwindcss, SiNodedotjs, SiExpress,
-	SiDocker, SiMongodb, SiLinux, SiGit, SiGithub,
-	SiVercel, SiPostcss, SiPostgresql, SiAngular,
-	SiSpringboot, SiSpring, SiJavascript,SiNextdotjs,SiPython,SiLangchain
+	SiReact,
+	SiTailwindcss,
+	SiNodedotjs,
+	SiExpress,
+	SiDocker,
+	SiMongodb,
+	SiLinux,
+	SiGit,
+	SiGithub,
+	SiVercel,
+	SiPostcss,
+	SiPostgresql,
+	SiAngular,
+	SiSpringboot,
+	SiSpring,
+	SiJavascript,
+	SiNextdotjs,
+	SiPython,
+	SiLangchain,
 } from "@icons-pack/react-simple-icons";
 
 const skills = [
@@ -26,7 +40,6 @@ const skills = [
 	{ icon: <SiPython size="1em" color="#3776AB" />, label: "Python" },
 	{ icon: <SiLangchain size="1em" color="#1C3C3C" />, label: "Langchain" },
 	{ icon: <SiTailwindcss size="1em" color="#06B6D4" />, label: "Tailwind CSS" },
-	
 ];
 
 function SkillsComponent() {
