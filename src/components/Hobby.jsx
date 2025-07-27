@@ -52,7 +52,7 @@ export default function Test() {
 							key={i}
 							onMouseEnter={() => {
 								setHoveredIndex(i);
-								setInnerHoveredIndex(null); // reset inner on new card hover
+								setInnerHoveredIndex(null);
 							}}
 							onMouseLeave={() => {
 								setHoveredIndex(null);
@@ -61,7 +61,6 @@ export default function Test() {
 							className={`relative border border-green-600/30 rounded-xl flex-1 flex transition-[flex] duration-500 ease-in-out min-w-0 overflow-hidden group
 								${isHovered ? "flex-[10]" : "group-hover:flex-[0.8]"}`}
 						>
-							{/* Background Image */}
 							<img
 								src={hobby.img}
 								alt=""
@@ -69,10 +68,8 @@ export default function Test() {
 								${isHovered ? "scale-105" : "scale-100"}`}
 							/>
 
-							{/* Gradient Overlay */}
 							<div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/70 to-black/90" />
 
-							{/* Title (fade out if any card hovered) */}
 							<span
 								className={`absolute z-20 text-white/80 font-semibold text-xl bottom-3 left-3 transition-opacity duration-500 ease-in-out
 									${isAnyHovered ? "opacity-0" : "opacity-100"}`}
@@ -80,7 +77,6 @@ export default function Test() {
 								{hobby.title}
 							</span>
 
-							{/* Hover Overlay */}
 							<div
 								className={`absolute inset-0 z-30 flex items-center justify-center text-2xl font-bold transition-all duration-500 
 									bg-black bg-opacity-80 rounded-xl
@@ -121,6 +117,28 @@ export default function Test() {
 						</div>
 					);
 				})}
+			</div>
+
+			{/* Mobile layout - 4 main card slider */}
+			<div className="md:hidden mt-6 ">
+				<div className="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+					{hobbies.map((hobby, i) => (
+						<div
+							key={i}
+							className="relative w-[250px] h-70 rounded-xl overflow-hidden border border-green-600/40 flex-shrink-0"
+						>
+							<img
+								src={hobby.img}
+								alt={hobby.title}
+								className="w-full h-full object-cover rounded-xl"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black/90" />
+							<div className="absolute bottom-3 left-3 text-white font-semibold text-xl z-10">
+								{hobby.title}
+							</div>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	);
