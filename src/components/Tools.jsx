@@ -3,7 +3,7 @@ import Figma from "../assets/tools/figma.svg";
 import Postman from "../assets/tools/postman.svg";
 import Vscode from "../assets/tools/vscode.svg";
 import Intellijidea from "../assets/tools/intel.svg";
-import WebStorm from "../assets/tools/webStorm.svg";
+import WebStorm from "../assets/tools/webstorm.svg";
 import Spotify from "../assets/tools/spotify.svg";
 
 export default function Tools() {
