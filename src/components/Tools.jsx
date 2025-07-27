@@ -2,7 +2,7 @@ import Brave from "../assets/tools/brave.svg";
 import Figma from "../assets/tools/figma.svg";
 import Postman from "../assets/tools/postman.svg";
 import Vscode from "../assets/tools/vscode.svg";
-import Intellijidea from "../assets/tools/intelliJidea.svg";
+import Intellijidea from "../assets/tools/intel.svg";
 import WebStorm from "../assets/tools/webStorm.svg";
 import Spotify from "../assets/tools/spotify.svg";
 
