@@ -7,7 +7,8 @@ const HeadingComponent = ({ heading }) => {
 				{heading}
 			</p>
 		</div>
-	);s
+	);
+	s;
 };
 
 export default HeadingComponent;

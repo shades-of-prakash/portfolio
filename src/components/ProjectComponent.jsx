@@ -15,18 +15,8 @@ const ProjectComponent = () => {
 		setActiveIndex(index);
 	}
 
-	// useEffect(() => {
-	// 	// Disable background scroll
-	// 	document.body.style.overflow = "hidden";
-
-	// 	return () => {
-	// 		// Re-enable when component unmounts
-	// 		document.body.style.overflow = "";
-	// 	};
-	// }, []);
-
 	return (
-		<div className="relative w-full h-auto">
+		<div className="relative w-full h-auto" id="work">
 			<div className=" mt-10 ">
 				<HeadingComponent heading="PROJECTS" />
 			</div>

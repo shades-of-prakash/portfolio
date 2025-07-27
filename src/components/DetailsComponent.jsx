@@ -71,7 +71,7 @@ const DetailsComponent = () => {
 							</div>
 						</button>
 					</div>
-
+					{/* 
 					<a
 						href="/resume.pdf"
 						target="_blank"
@@ -79,7 +79,7 @@ const DetailsComponent = () => {
 						className="md:mt-3 w-30 md:w-30 h-12 border border-green-600 md:border-0 md:bg-gradient-to-r md:from-gradinet-start md:to-gradient-end rounded-full flex justify-center  items-center"
 					>
 						Resume
-					</a>
+					</a> */}
 				</div>
 			</div>
 		</div>

@@ -5,7 +5,6 @@ import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 import { Layers01Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import shades from "../assets/shades.jpg";
 import {
 	SiNextdotjs,
 	SiReact,
@@ -96,6 +95,7 @@ export default function Knowme() {
 
 	return (
 		<div
+			id="about"
 			ref={sectionRef}
 			className="w-full md:h-dvh h-auto   flex justify-center items-center flex-col overflow-hidden md:p-10 p-3"
 		>
