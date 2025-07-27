@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile.webp";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 const ProfileComponent = () => {
@@ -28,13 +28,12 @@ const ProfileComponent = () => {
 						<div
 							ref={(el) => (linesRef.current[i] = el)}
 							key={i}
-							
 							className="w-[1px] h-full bg-gradient-to-b from-accent  md:from-accent md:via-accent  md:to-black"
 						/>
 					))}
 				</div>
 			</div>
-			<div className="absolute w-50 h-50 md:w-90 md:h-90 bg-red-900 rounded-md overflow-hidden ">
+			<div className="absolute w-50 h-50 md:w-90 md:h-90 bg-green-600 rounded-md overflow-hidden ">
 				<img src={profile} alt="" />
 			</div>
 		</div>
